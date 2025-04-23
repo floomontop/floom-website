@@ -1,134 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
   <title>Floom - Home</title>
-  <link rel="stylesheet" href="style.css">
-
-  <!-- Font from Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Gagalin&display=swap" rel="stylesheet">
-
-  <style>
-    /* Apply Gagalin font globally */
-    * {
-      font-family: 'Gagalin', sans-serif; /* All elements will use Gagalin font */
-    }
-
-    body {
-      background-color: black;
-      color: white;
-    }
-
-    header {
-      text-align: center;
-      padding: 20px;
-    }
-
-    header h1 {
-      font-size: 3em;
-    }
-
-    nav {
-      background-color: #333;
-      padding: 10px;
-      text-align: center;
-    }
-
-    nav a {
-      color: white;
-      padding: 10px 15px;
-      text-decoration: none;
-      margin: 0 10px;
-    }
-
-    nav a:hover {
-      background-color: #ddd;
-      color: black;
-    }
-
-    .hero-image {
-      width: 100%;
-      height: auto;
-      display: block;
-      margin-top: 20px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 10px;
-      margin-top: 20px;
-      background-color: #333;
-    }
-
-    /* Contact Section */
-    section#contact {
-      display: none;
-      text-align: center;
-      padding: 40px 20px;
-      background-color: #333;
-    }
-
-    section#contact h2 {
-      font-size: 2em;
-    }
-
-    section#contact p {
-      font-size: 1.2em;
-    }
-
-    /* Button for Contact */
-    .contact-btn {
-      background-color: #333;
-      color: white;
-      padding: 10px 20px;
-      text-decoration: none;
-      border-radius: 5px;
-      font-size: 1.2em;
-    }
-
-    .contact-btn:hover {
-      background-color: #ddd;
-      color: black;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Gagalin&display=swap" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 <body>
-
-  <!-- Hero Image -->
-  <img src="https://raw.githubusercontent.com/floomontop/floom-website/main/Screenshot_20250421_125317_Canva.jpg" alt="Floom Image" class="hero-image">
-
-  <header><h1>Welcome to Floom</h1></header>
-
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="products.html">Products</a>
-    <a href="#contact" class="contact-btn">Contact</a> <!-- Contact button -->
-  </nav>
+  <header>
+    <h1>FLOOM</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="products.html">Products</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
   <main>
-    <p>This is the homepage of Floom Clothing.</p>
+    <h2>Welcome to Floom Clothing</h2>
+    <p>Floom is redefining comfort and style with bold statements.</p>
+    <img src="https://raw.githubusercontent.com/floomontop/floom-website/main/Screenshot_20250421_125317_Canva.jpg" alt="Floom Banner" class="hero-image" />
   </main>
 
-  <!-- Contact Section -->
   <section id="contact">
-    <h2>Contact Us</h2>
+    <h3>Contact Us</h3>
     <p>Phone: 9478943632, 8284837828, 7696059509</p>
     <p>Email: floomthreads@gmail.com</p>
   </section>
 
   <footer>&copy; 2025 Floom</footer>
-
-  <!-- JavaScript to display contact section after launch date -->
-  <script>
-    const launchDate = new Date('2025-05-01');
-    const today = new Date();
-
-    if (today >= launchDate) {
-      document.getElementById('contact').style.display = 'block';
-    }
-  </script>
-
 </body>
-  </html>
+</html>
