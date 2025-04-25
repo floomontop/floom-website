@@ -1,60 +1,159 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Floom</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FLOOM</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <style>
-    body {
-      background-color: black;
-      color: white;
-      font-family: Arial, sans-serif;
+    * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
     }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #fefefe;
+      overflow-x: hidden;
+    }
+
+    .floom-header {
+      font-size: 36px;
+      font-weight: bold;
+      text-align: center;
+      padding-top: 20px;
+    }
+
+    .tagline {
+      text-align: center;
+      font-size: 14px;
+      margin-top: 5px;
+      margin-bottom: 20px;
+    }
+
     .section {
-      padding: 40px 20px;
+      padding: 20px;
       text-align: center;
     }
-    .logo {
-      font-size: 48px;
-      letter-spacing: 4px;
-    }
-    .slogan {
-      font-size: 18px;
-      letter-spacing: 2px;
-    }
-    .tshirt-img {
+
+    .section img {
       width: 80%;
-      max-width: 500px;
+      max-width: 300px;
+      border-radius: 12px;
     }
-    .contact-btn {
-      background: white;
-      color: black;
-      padding: 12px 24px;
-      text-decoration: none;
-      border-radius: 6px;
+
+    .section-text {
+      font-size: 16px;
+      margin-top: 10px;
+    }
+
+    .wave {
+      height: 50px;
+      background: repeating-linear-gradient(
+        -45deg,
+        #f4c542,
+        #f4c542 10px,
+        transparent 10px,
+        transparent 20px
+      );
+      margin: 30px 0;
+    }
+
+    .contact {
+      text-align: center;
+      font-weight: bold;
+      margin: 20px;
+    }
+
+    .bottom-nav {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #fff;
+      border-top: 1px solid #ddd;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 60px;
+    }
+
+    .bottom-nav .material-icons {
+      font-size: 24px;
+      color: #333;
+    }
+
+    /* Repeating FLOOM background */
+    .background-header {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100px;
+      font-size: 48px;
+      color: rgba(200,200,200,0.15);
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    .background-header span {
+      animation: scrollText 20s linear infinite;
+      display: inline-block;
+    }
+
+    @keyframes scrollText {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
     }
   </style>
 </head>
 <body>
+
+  <div class="background-header">
+    <span>FLOOM FLOOM FLOOM FLOOM FLOOM FLOOM FLOOM FLOOM FLOOM </span>
+  </div>
+
+  <div class="floom-header">FLOOM</div>
+  <div class="tagline">STAY COOL , STAY FLOOMED</div>
+
   <div class="section">
-    <h1 class="logo">FLOOM</h1>
-    <p class="slogan">STAY COOL , STAY FLOOMED</p>
+    <img id="image1" src="" alt="Image of a tshirt">
+    <div class="section-text">Intro to floom</div>
   </div>
 
   <div class="section">
-    <img src="tshirt.jpg" alt="Floom T-Shirts" class="tshirt-img">
+    <img id="image2" src="" alt="Another image">
+    <div class="section-text">Floom motive</div>
   </div>
 
-  <div class="section">
-    <h2>About Floom</h2>
-    <p>Floom is more than just a clothing brand — it’s a lifestyle movement born out of youth energy, self-expression, and urban cool. We bring unique, high-quality T-shirts that blend minimalism with bold attitude. Whether you're out with friends or chilling at home, Floom outfits are designed to keep you comfortable and stylish all day long. Our name stands for flow and bloom — because we believe in growing while staying real. Every piece we drop speaks confidence, creativity, and coolness. It’s fashion made for people who stand out without trying too hard. Welcome to the world of Floom — Stay Cool, Stay Floomed.</p>
+  <div class="wave"></div>
+  <div class="wave"></div>
 
-    <h2>Our Motive</h2>
-    <p>At Floom, our motive is simple: to empower the youth through fashion that speaks their language. We aim to create clothing that isn’t just worn but felt — something that reflects who you are and how you vibe. We're not here to follow trends — we’re here to set them. Our focus is on comfort, individuality, and raw street style. Floom stands for authenticity, originality, and passion. We want every customer to feel bold, confident, and unapologetically themselves. With every drop, we strive to spark self-expression and represent the culture that raised us. This isn’t just fashion — it’s a movement.</p>
+  <div class="contact">For any queries , contact 99999999</div>
+
+  <div class="bottom-nav">
+    <span class="material-icons">home</span>
+    <span class="material-icons">search</span>
+    <span class="material-icons">favorite</span>
+    <span class="material-icons">shopping_cart</span>
+    <span class="material-icons">person</span>
   </div>
 
-  <div class="section">
-    <a href="contact.html" class="contact-btn">Contact Us</a>
-  </div>
+  <script>
+    const images = [
+      "https://cdn.pixabay.com/photo/2023/08/18/11/06/woman-8197736_1280.jpg",
+      "https://cdn.pixabay.com/photo/2017/01/14/10/57/man-1979261_1280.jpg",
+      "https://cdn.pixabay.com/photo/2023/12/09/13/48/women-8440207_1280.jpg",
+      "https://cdn.pixabay.com/photo/2017/01/26/22/14/tshirt-2016013_1280.jpg",
+      "https://cdn.pixabay.com/photo/2013/11/28/09/15/believe-220364_1280.jpg",
+      "https://cdn.pixabay.com/photo/2021/01/14/14/21/tshirt-5916112_1280.jpg",
+      "https://cdn.pixabay.com/photo/2023/08/19/21/41/woman-8201302_1280.jpg",
+      "https://cdn.pixabay.com/photo/2023/04/14/15/08/man-7924511_1280.jpg"
+    ];
+
+    document.getElementById('image1').src = images[Math.floor(Math.random() * images.length)];
+    document.getElementById('image2').src = images[Math.floor(Math.random() * images.length)];
+  </script>
+
 </body>
 </html>
