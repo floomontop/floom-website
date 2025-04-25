@@ -1,5 +1,13 @@
-# floom-website
+# Floom - Premium T-shirt Brand
 
-This is the official website of Floom Clothing Brand.
+Welcome to **Floom**, your go-to brand for stylish and high-quality t-shirts.
 
-Domain: [http://floom.co.in](http://floom.co.in) *(HTTPS is currently in progress)*
+## About Floom
+Floom is dedicated to providing comfortable, fashionable, and eco-friendly t-shirts. We believe in quality, style, and sustainability.
+
+## Technologies Used:
+- HTML
+- CSS
+- GitHub Pages for hosting
+
+For more details, visit our website.
