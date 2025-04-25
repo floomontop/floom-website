@@ -1,135 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FLOOM</title>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Arial', sans-serif;
-      background-color: #fffbe3; /* Yellow tint background */
-      overflow-x: hidden;
-    }
-
-    .floom-header {
-      font-size: 36px;
-      font-weight: bold;
-      text-align: center;
-      padding-top: 20px;
-    }
-
-    .tagline {
-      text-align: center;
-      font-size: 14px;
-      margin-top: 5px;
-      margin-bottom: 20px;
-    }
-
-    .section {
-      padding: 20px;
-      text-align: center;
-    }
-
-    .section img {
-      width: 80%;
-      max-width: 300px;
-      border-radius: 12px;
-    }
-
-    .section-text {
-      font-size: 16px;
-      margin-top: 10px;
-    }
-
-    .wave {
-      height: 50px;
-      background: repeating-linear-gradient(
-        -45deg,
-        #f4c542,
-        #f4c542 10px,
-        transparent 10px,
-        transparent 20px
-      );
-      margin: 30px 0;
-    }
-
-    .contact {
-      text-align: center;
-      font-weight: bold;
-      margin: 20px;
-    }
-
-    .bottom-nav {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: #fff;
-      border-top: 1px solid #ddd;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      height: 60px;
-    }
-
-    .bottom-nav .material-icons {
-      font-size: 24px;
-      color: #333;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floom</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="index.html"><img src="https://fonts.google.com/icons?selected=Material+Icons:home:&icon.size=29&icon.color=%23e3e3e3" alt="Home" class="icon"></a>
+        <a href="#"><img src="https://fonts.google.com/icons?selected=Material+Icons:search:&icon.size=29&icon.color=%23e3e3e3" alt="Search" class="icon"></a>
+        <a href="#"><img src="https://fonts.google.com/icons?selected=Material+Icons:favorite_border:&icon.size=29&icon.color=%23e3e3e3" alt="Favorite" class="icon"></a>
+        <a href="#"><img src="https://fonts.google.com/icons?selected=Material+Icons:shopping_cart:&icon.size=29&icon.color=%23e3e3e3" alt="Cart" class="icon"></a>
+        <a href="#"><img src="https://fonts.google.com/icons?selected=Material+Icons:account_circle:&icon.size=29&icon.color=%23e3e3e3" alt="Account" class="icon"></a>
+    </div>
 
-  <!-- Removed the floating FLOOM text section -->
+    <!-- Main Content -->
+    <div class="main-content">
+        <h1>FLOOM</h1>
+        <p class="subheading">STAY COOL, STAY FLOOMED</p>
 
-  <div class="floom-header">FLOOM</div>
-  <div class="tagline">STAY COOL , STAY FLOOMED</div>
+        <!-- Random Image Section -->
+        <div class="image-container">
+            <img id="randomImage" class="random-image" alt="Image">
+        </div>
 
-  <div class="section">
-    <img id="image1" src="https://cdn.pixabay.com/photo/2022/10/09/09/12/woman-7508618_1280.jpg" alt="Image of a tshirt">
-    <div class="section-text">Intro to floom</div>
-  </div>
+        <p>WANNA KNOW WHAT'S FLOOM?</p>
+        <p>
+            Floom is more than just a clothing brand — it’s a lifestyle movement born out of youth energy, self-expression, and urban cool. We bring unique, high-quality T-shirts that blend minimalism with bold attitude. Whether you're out with friends or chilling at home, Floom outfits are designed to keep you comfortable and stylish all day long. Our name stands for flow and bloom — because we believe in growing while staying real. Every piece we drop speaks confidence, creativity, and coolness. It’s fashion made for people who stand out without trying too hard. Welcome to the world of Floom — Stay Cool, Stay Floomed.
+        </p>
 
-  <div class="section">
-    <img id="image2" src="https://cdn.pixabay.com/photo/2023/03/22/15/40/man-7869911_1280.jpg" alt="Another image">
-    <div class="section-text">Floom motive</div>
-  </div>
+        <!-- Another Random Image Section (Optional) -->
+        <div class="image-container">
+            <img id="randomImage2" class="random-image" alt="Image">
+        </div>
 
-  <div class="wave"></div>
-  <div class="wave"></div>
+        <p>WHAT'S FLOOM WANNA DO?</p>
+        <p>
+            At Floom, our motive is simple: to empower the youth through fashion that speaks their language. We aim to create clothing that isn’t just worn but felt — something that reflects who you are and how you vibe. We're not here to follow trends — we’re here to set them. Our focus is on comfort, individuality, and raw street style. Floom stands for authenticity, originality, and passion. We want every customer to feel bold, confident, and unapologetically themselves. With every drop, we strive to spark self-expression and represent the culture that raised us. This isn’t just fashion — it’s a movement.
+        </p>
 
-  <div class="contact">For any queries , contact 99999999</div>
+        <!-- Contact Us Button -->
+        <button onclick="window.location.href='contact.html'">Contact Us</button>
+    </div>
 
-  <div class="bottom-nav">
-    <span class="material-icons">home</span>
-    <span class="material-icons">search</span>
-    <span class="material-icons">favorite</span>
-    <span class="material-icons">shopping_cart</span>
-    <span class="material-icons">person</span>
-  </div>
+    <!-- Footer with fixed position navigation bar -->
+    <div class="footer-navbar">
+        <a href="index.html"><img src="https://fonts.google.com/icons?selected=Material+Icons:home:&icon.size=29&icon.color=%23e3e3e3" alt="Home"></a>
+        <a href="#"><img src="https://fonts.google.com/icons?selected=Material+Icons:search:&icon.size=29&icon.color=%23e3e3e3" alt="Search"></a>
+        <a href="#"><img src="https://fonts.google.com/icons?selected=Material+Icons:favorite_border:&icon.size=29&icon.color=%23e3e3e3" alt="Favorite"></a>
+        <a href="#"><img src="https://fonts.google.com/icons?selected=Material+Icons:shopping_cart:&icon.size=29&icon.color=%23e3e3e3" alt="Cart"></a>
+        <a href="#"><img src="https://fonts.google.com/icons?selected=Material+Icons:account_circle:&icon.size=29&icon.color=%23e3e3e3" alt="Account"></a>
+    </div>
 
-  <script>
-    const images = [
-      "https://cdn.pixabay.com/photo/2023/08/18/11/06/woman-8197736_1280.jpg",
-      "https://cdn.pixabay.com/photo/2017/01/14/10/57/man-1979261_1280.jpg",
-      "https://cdn.pixabay.com/photo/2023/12/09/13/48/women-8440207_1280.jpg",
-      "https://cdn.pixabay.com/photo/2017/01/26/22/14/tshirt-2016013_1280.jpg",
-      "https://cdn.pixabay.com/photo/2013/11/28/09/15/believe-220364_1280.jpg",
-      "https://cdn.pixabay.com/photo/2021/01/14/14/21/tshirt-5916112_1280.jpg",
-      "https://cdn.pixabay.com/photo/2023/08/19/21/41/woman-8201302_1280.jpg",
-      "https://cdn.pixabay.com/photo/2023/04/14/15/08/man-7924511_1280.jpg"
-    ];
+    <!-- JavaScript to handle random image selection -->
+    <script>
+        // Image links array
+        const imageLinks = [
+            "https://cdn.pixabay.com/photo/2022/10/09/09/12/woman-7508618_1280.jpg",
+            "https://cdn.pixabay.com/photo/2023/03/22/15/40/man-7869911_1280.jpg",
+            "https://cdn.pixabay.com/photo/2022/10/10/08/32/woman-7511233_1280.jpg",
+            "https://cdn.pixabay.com/photo/2021/03/28/10/20/not-today-6130906_1280.jpg"
+        ];
 
-    document.getElementById('image1').src = images[Math.floor(Math.random() * images.length)];
-    document.getElementById('image2').src = images[Math.floor(Math.random() * images.length)];
-  </script>
+        // Function to display random image
+        function displayRandomImage() {
+            const randomIndex = Math.floor(Math.random() * imageLinks.length);
+            const randomImage = imageLinks[randomIndex];
+            document.getElementById("randomImage").src = randomImage;
+            
+            // Optional second random image
+            const randomIndex2 = Math.floor(Math.random() * imageLinks.length);
+            const randomImage2 = imageLinks[randomIndex2];
+            document.getElementById("randomImage2").src = randomImage2;
+        }
 
+        // Calling the function to display image when page loads
+        window.onload = displayRandomImage;
+    </script>
 </body>
-</html>
+  </html>
